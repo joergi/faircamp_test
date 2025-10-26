@@ -20,6 +20,10 @@ jobs:
       - name: test echo
         run: |
          echo "hello world"
+      - name: apt clean update
+        run: |
+          sudo apt clean -y
+          sudo apt update -y
       - name: install deps
         run: |
           sudo apt install cmake ffmpeg gcc git libopus-dev libvips-dev
