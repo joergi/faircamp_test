@@ -40,5 +40,5 @@ jobs:
           ls -lah ../target/release
           ls -lah ../target/release/build/
           echo "ls -lah ~/"
-          ls -lah ~./
+          ls -lah ~/
           
