@@ -46,16 +46,14 @@ jobs:
           ls -lah
           faircamp --build-dir ../fc_web
           ls -lah ../fc_web
-
-
-
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - name: ls-lah
+        run: ls -lah
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-
-          path: '../fc_web'
+          path: 'fc_web'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
