@@ -20,6 +20,7 @@ jobs:
       - name: test echo
         run: |
          echo "hello world"
+         pwd
       - name: apt clean update
         run: |
           sudo apt clean -y
@@ -30,3 +31,6 @@ jobs:
       - name: install faircamp
         run: |
           cargo install --features libvips --locked --path .
+      - name: create faircamp site
+        run: |
+          cd
