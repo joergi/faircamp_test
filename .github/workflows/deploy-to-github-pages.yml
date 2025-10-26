@@ -36,9 +36,6 @@ jobs:
           cd original_audio
           ls -lah
           faircamp
-          echo "ls -lah ../target"
-          ls -lah ../target
-          echo "ls -lah ../" 
-          ls -lah ../
-          echo "ls -lah ../.faircamp_build"
-          ls -lah ../.faircamp_build
+          echo "ls -lah ../target/release"
+          ls -lah ../target/release
+          
