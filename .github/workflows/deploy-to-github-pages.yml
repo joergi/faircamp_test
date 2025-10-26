@@ -35,4 +35,6 @@ jobs:
           cargo install --features libvips --locked --path .
       - name: create faircamp site
         run: |
-          cd
+          cd original_audio
+          ls -lah
+          faircamp
