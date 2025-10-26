@@ -1,0 +1,15 @@
+# SPDX-FileCopyrightText: 2021-2025 Simon Repp
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+[package]
+authors = ["Simon Repp"]
+edition = "2021"
+name = "manual"
+version = "1.6.0"
+
+[dependencies]
+base64 = "0.22.1"
+enolib = { git = "https://codeberg.org/simonrepp/enolib-rs", tag = "0.5.0" }
+indoc = "2.0.6"
+pulldown-cmark = { default-features = false, features = ["html", "simd"], version = "0.13.0" }
+slug = "0.1.6"

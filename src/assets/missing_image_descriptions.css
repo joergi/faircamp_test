@@ -1,0 +1,33 @@
+.undescribed_icon {
+    background-color: var(--bg-1-overlay);
+    border-radius: .4rem;
+    color: var(--fg-2);
+    padding: .3em;
+    position: absolute;
+    right: .4rem;
+    top: .4rem;
+    z-index: 3;
+}
+a.undescribed_icon,
+a.undescribed_icon:hover {
+    color: var(--fg-2);
+}
+.undescribed_icon svg {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.undescribed_overlay {
+    align-items: center;
+    background-color: var(--bg-1-overlay);
+    border-radius: var(--cover-border-radius);
+    display: none;
+    font-size: var(--clearly-smaller);
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+.undescribed_icon:hover + .undescribed_overlay { display: flex; }
+.undescribed_wrapper { position: relative; }
