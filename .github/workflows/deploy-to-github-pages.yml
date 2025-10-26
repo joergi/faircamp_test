@@ -33,13 +33,10 @@ jobs:
       - name: create faircamp site
         run: |
           ls target
+          mkdir fc_web
           cd original_audio
           ls -lah
-          faircamp
-          echo "ls -lah ../target/release"
-          ls -lah ../target/release
-          ls -lah ../target/release/build/
-          echo "ls -lah ~/"
-          ls -lah ~/
-          ls -lah my_best_band
+          faircamp --build-dir ../fc_web
+          ls -lah ../fc_web
+          
           
