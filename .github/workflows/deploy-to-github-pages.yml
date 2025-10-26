@@ -18,7 +18,7 @@ jobs:
     permissions:
       pages: write      # to deploy to Pages
       id-token: write   # to verify the deployment originates from an appropriate source
-
+      contents: read
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
@@ -47,6 +47,15 @@ jobs:
           faircamp --build-dir ../fc_web
           ls -lah ../fc_web
 
+
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+
+          path: '../fc_web'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
