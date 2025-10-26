@@ -20,5 +20,9 @@ jobs:
       - name: test echo
         run: |
          echo "hello world"
-      - name: Run cargo build
-        run: cargo build --verbose
+      - name: install deps
+        run: |
+          sudo apt install cmake ffmpeg gcc git libopus-dev libvips-dev
+      - name: install faircamp
+        run: |
+          cargo install --features libvips --locked --path .
