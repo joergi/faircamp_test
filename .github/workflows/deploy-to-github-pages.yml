@@ -19,8 +19,10 @@ jobs:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
       - name: test echo
         run: |
-         echo "hello world"
-         pwd
+          echo "hello world"
+          pwd
+          cd original_audio
+          ls -lah
       - name: apt clean update
         run: |
           sudo apt clean -y
